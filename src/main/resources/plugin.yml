@@ -1,0 +1,4 @@
+name: Economy
+version: '${project.version}'
+main: economy.economy.Economy
+api-version: 1.13
