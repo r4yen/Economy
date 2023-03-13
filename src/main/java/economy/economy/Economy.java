@@ -6,7 +6,6 @@ public final class Economy extends JavaPlugin {
 
     @Override
     public void onEnable() {
-
     }
 
     @Override
