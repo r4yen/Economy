@@ -1,4 +1,14 @@
 name: Economy
 version: '${project.version}'
 main: economy.economy.Economy
+author: [ rayen ]
 api-version: 1.13
+commands:
+  money:
+    permission: economy.default
+  pay:
+    permission: economy.default
+  setmoney:
+    permission: economy.admin
+  addmoney:
+    permission: economy.admin
