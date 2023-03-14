@@ -8,8 +8,24 @@ import org.bukkit.command.CommandSender;
 public class MoneyCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        sender.sendMessage("Coming soon.");
+        Player p = null;
 
-        return Economy.CommandExecutor();
+        if(args.length == 1) {
+            p = Bukkit.getPlayer(args[0]);
+        } else if(sender instanceof Player) {
+            p = (Player) sender;
+        }
+
+        if(p == null && args.length == 1) {
+            sender.sendMessage(/* Player not found */);
+        } else if(args.length > 1) {
+            sender.sendMessage(/* Too many arguments */);
+        } else if(p == null) {
+            sender.sendMessage(/* Command from Console */);
+        } else {
+            sender.sendMessage(/* Money of Player */);
+        }
+
+        return true;
     }
 }
