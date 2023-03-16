@@ -1,0 +1,28 @@
+language: 'english' # english / german / minecraft
+tab-completer: 'true' # true / false
+commands:
+  money:
+    enabled: 'true' # true / false
+    permission: 'economy.money' # /money
+    permission-required: 'false' # true / false
+    other-players:
+      permission: 'economy.view-others' # /money [player]
+      permission-required: 'true' # true / false
+  topmoney:
+    enabled: 'true' # true / false
+    permission: 'economy.view-others' # /topmoney [page]
+    permission-required: 'false' # true / false
+  pay:
+    enabled: 'true' # true / false
+    permission: 'economy.pay' # /pay <player> <amount>
+    permission-required: 'false' # true / false
+  setmoney:
+    enabled: 'true' # true / false
+    permission: 'economy.admin.setmoney' # /setmoney <player> <amount>
+    permission-required: 'true' # true / false
+  givemoney:
+    enabled: 'true' # true / false
+    permission: 'economy.admin.setmoney' # /givemoney <player> <amount>
+    permission-required: 'true' # true / false
+  admin:
+    permission: 'economy' # Permission to everything
