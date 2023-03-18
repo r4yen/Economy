@@ -19,13 +19,13 @@ public class MoneyCommand implements CommandExecutor {
         }
 
         if(p == null && args.length == 1) {
-            sender.sendMessage(/* Player not found */);
+            sender.sendMessage(/* Player not found */ "");
         } else if(args.length > 1) {
-            sender.sendMessage(/* Too many arguments */);
+            sender.sendMessage(/* Too many arguments */ "");
         } else if(p == null) {
-            sender.sendMessage(/* Command from Console */);
+            sender.sendMessage(/* Command from Console */ "");
         } else {
-            sender.sendMessage(/* Money of Player */);
+            sender.sendMessage(/* Money of Player */ "");
         }
 
         return true;
