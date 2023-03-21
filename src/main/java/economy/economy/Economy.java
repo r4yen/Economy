@@ -1,6 +1,7 @@
 package economy.economy;
 
 import economy.economy.commands.MoneyCommand;
+import org.bukkit.Bukkit;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -24,6 +25,10 @@ public final class Economy extends JavaPlugin {
         createMessagesConfig();
         createServerConfig();
         createProfilesConfig();
+
+        if(Bukkit.getPluginManager().isPluginEnabled("PlaceholderAPI")) {
+            new PAPI();
+        }
 
         this.getCommand("money").setExecutor(new MoneyCommand());
     }
