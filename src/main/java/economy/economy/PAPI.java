@@ -17,6 +17,10 @@ public class PAPI extends PlaceholderHook {
         }
 
         if(params.equalsIgnroeCase("totalmoney")) {
+            int money = 0;
+
+            for(UUID uuid: Economy.
+
             return null;
         }
 
