@@ -12,6 +12,14 @@ public class PAPI extends PlaceholderHook {
             return String.valueOf(Economy.getMoney(p.getUniqueId()));
         }
 
+        if(params.equalsIgnoreCase("rank")) {
+             return null;
+        }
+
+        if(params.equalsIgnroeCase("totalmoney")) {
+            return null;
+        }
+
         return null;
     }
 }
